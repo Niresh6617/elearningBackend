@@ -10,7 +10,7 @@ app.use(cors())
 app.use('/', require('./routes/courseRoutes'))
 
 // Database connection
-mongoose.connect('mongodb://127.0.0.1:27017/LMS').then(() => {
+mongoose.connect('mongodb+srv://niresh:niresh123@cluster0.ukpt3.mongodb.net/LMS').then(() => {
     console.log('db connected');
 })
 
